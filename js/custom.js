@@ -254,7 +254,7 @@ jQuery(function($) {
 
 			//Portfolio Isotope 
 
-			var $container = $('#gallery-isotope');
+			var $container = $('.portfolio-item');
 			$container.isotope({
 				filter: '*',
 				animationOptions: {
