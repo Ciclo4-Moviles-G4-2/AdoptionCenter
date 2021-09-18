@@ -201,25 +201,56 @@
          <div class="col-lg-8 offset-lg-2 text-center">
             <h3>Encuentra a tu próximo amigo peludo</h3>
             <p>A continuación encontrarás una galería de todas las mascotas disponibles para adopción.<br>Puedes hacer
-               click sobre los botones que aparecen abajo para seleccionar un criterio de filtrado sobre la galería</p>
+               click sobre los botones que aparecen abajo para seleccionar un criterio de filtrado sobre la galería, ya
+               sea por tipo, por género o por tamaño:</p>
          </div>
          <!-- Filtros de selección de galería -->
-         <ul class="nav nav-pills cat center-nav">
+         <ul class="nav nav-pills center-nav">
+            <!-- Todas las mascotas -->
             <li class="nav-item">
-               <a class="nav-link active" href="#" data-toggle="tab" data-filter="*">Todos</a>
+               <a class="option nav-link active" href="#" data-toggle="tab" data-filter="*">Todos</a>
             </li>
-            <li class="nav-item">
-               <a class="nav-link" href="#" data-toggle="tab" data-filter=".dogs">Perros</a>
+            <!-- Por tipo (perro o gato) -->
+            <li class="nav-item dropdown">
+               <a class="nav-link dropdown-toggle" href="#" id="dropdownMenuType" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  Tipo
+               </a>
+               <ul class="dropdown-menu" aria-labelledby="dropdownMenuType">
+                  <li><a class="option nav-link" href="#" data-filter=".dog">Perro</a></li>
+                  <li><a class="option nav-link" href="#" data-filter=".cat">Gato</a></li>
+               </ul>
             </li>
-            <li class="nav-item">
-               <a class="nav-link" href="#" data-toggle="tab" data-filter=".cats">Gatos</a>
+            <!-- Por género (macho o hembra) -->
+            <li class="nav-item dropdown">
+               <a class="nav-link dropdown-toggle" href="#" id="dropdownMenuSex" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  Género
+               </a>
+               <ul class="dropdown-menu" aria-labelledby="dropdownMenuSex">
+                  <li><a class="option nav-link" href="#" data-filter=".male">Macho</a></li>
+                  <li><a class="option nav-link" href="#" data-filter=".female">Hembra</a></li>
+               </ul>
+            </li>
+            <!-- Por tamaño (grande, mediano o pequeño) -->
+            <li class="nav-item dropdown">
+               <a class="nav-link dropdown-toggle" href="#" id="dropdownMenuSize" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  Tamaño
+               </a>
+               <ul class="dropdown-menu" aria-labelledby="dropdownMenuSize">
+                  <li><a class="option nav-link" href="#" data-filter=".sml">Pequeño</a></li>
+                  <li><a class="option nav-link" href="#" data-filter=".med">Mediano</a></li>
+                  <li><a class="option nav-link" href="#" data-filter=".big">Grande</a></li>
+               </ul>
             </li>
          </ul>
+
          <!-- /ul -->
          <!-- Primera fila: adopta tu mascota -->
          <div class="portfolio-item row m-5">
             <!-- Mascota  -->
-            <div class="dogs item adopt-card col-md-6 col-xl-3 res-margin">
+            <div class="dog female med item adopt-card col-md-6 col-xl-3 res-margin">
                <div class="card bg-light-custom">
                   <div class="thumbnail text-center">
                      <!-- Imagen -->
@@ -245,7 +276,7 @@
             </div>
             <!-- /adopt-card -->
             <!-- Mascota  -->
-            <div class="cats item adopt-card col-md-6 col-xl-3 res-margin">
+            <div class="cat male sml item adopt-card col-md-6 col-xl-3 res-margin">
                <div class="card bg-light-custom">
                   <div class="thumbnail text-center">
                      <!-- Imagen -->
@@ -271,7 +302,7 @@
             </div>
             <!-- /adopt-card -->
             <!-- Mascota  -->
-            <div class="dogs item adopt-card col-md-6 col-xl-3 res-margin">
+            <div class="dog male sml item adopt-card col-md-6 col-xl-3 res-margin">
                <div class="card bg-light-custom">
                   <div class="thumbnail text-center">
                      <!-- Imagen -->
@@ -297,7 +328,7 @@
             </div>
             <!-- /adopt-card -->
             <!-- Mascota  -->
-            <div class="cats item adopt-card col-md-6 col-xl-3 res-margin">
+            <div class="cat female med item adopt-card col-md-6 col-xl-3 res-margin">
                <div class="card bg-light-custom">
                   <div class="thumbnail text-center">
                      <!-- Imagen -->
@@ -323,7 +354,7 @@
             </div>
             <!-- /adopt-card -->
             <!-- Mascota  -->
-            <div class="dogs item adopt-card col-md-6 col-xl-3 res-margin">
+            <div class="dog female med item adopt-card col-md-6 col-xl-3 res-margin">
                <div class="card bg-light-custom">
                   <div class="thumbnail text-center">
                      <!-- Imagen -->
@@ -349,7 +380,7 @@
             </div>
             <!-- /adopt-card -->
             <!-- Mascota  -->
-            <div class="cats item adopt-card col-md-6 col-xl-3 res-margin">
+            <div class="cat male sml item adopt-card col-md-6 col-xl-3 res-margin">
                <div class="card bg-light-custom">
                   <div class="thumbnail text-center">
                      <!-- Imagen -->
@@ -375,7 +406,7 @@
             </div>
             <!-- /adopt-card -->
             <!-- Mascota  -->
-            <div class="cats item adopt-card col-md-6 col-xl-3 res-margin">
+            <div class="cat male med item adopt-card col-md-6 col-xl-3 res-margin">
                <div class="card bg-light-custom">
                   <div class="thumbnail text-center">
                      <!-- Imagen -->
@@ -401,7 +432,7 @@
             </div>
             <!-- /adopt-card -->
             <!-- Mascota  -->
-            <div class="dogs item adopt-card col-md-6 col-xl-3 res-margin">
+            <div class="dog male big item adopt-card col-md-6 col-xl-3 res-margin">
                <div class="card bg-light-custom">
                   <div class="thumbnail text-center">
                      <!-- Imagen -->
@@ -494,7 +525,7 @@
    <!--/ footer-->
    <!-- Bootstrap core & Jquery -->
    <script src="vendor/jquery/jquery.min.js"></script>
-   <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
    <!-- Custom Js -->
    <script src="js/custom.js"></script>
    <script src="js/plugins.js"></script>
