@@ -275,8 +275,9 @@ jQuery(function($) {
 			//Portfolio Nav Filter
 
 			$('.option').on('click', function() {
-				$('.active').removeClass('active');
+				$('.option').removeClass('active');
 				$(this).addClass('active');
+				$('.dropdown-menu').removeClass('show');
 
 				var selector = $(this).attr('data-filter');
 				$container.isotope({
