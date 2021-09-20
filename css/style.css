@@ -1334,12 +1334,6 @@ Last change: 8th June 2018
      content: "\f126";
      padding-right: 7px;
 }
-
-ul.custom li:b {
-    font-family: "Flaticon";
-    content: "\f126";
-    padding-right: 7px;
-}
 /* white border if bg same color as form border */
  .bg-primary .form-control{
      border-color:#fff;
