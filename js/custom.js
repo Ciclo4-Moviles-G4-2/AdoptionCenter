@@ -254,7 +254,7 @@ jQuery(function($) {
 
 			//Portfolio Isotope 
 
-			var $container = $('#gallery-isotope');
+			var $container = $('.portfolio-item');
 			$container.isotope({
 				filter: '*',
 				animationOptions: {
@@ -274,9 +274,10 @@ jQuery(function($) {
 
 			//Portfolio Nav Filter
 
-			$('.cat a').on('click', function() {
-				$('.cat .active').removeClass('active');
+			$('.option').on('click', function() {
+				$('.option').removeClass('active');
 				$(this).addClass('active');
+				$('.dropdown-menu').removeClass('show');
 
 				var selector = $(this).attr('data-filter');
 				$container.isotope({
