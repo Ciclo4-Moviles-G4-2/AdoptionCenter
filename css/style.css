@@ -1880,6 +1880,16 @@ Last change: 8th June 2018
          margin-top: 100px;
     }
 }
+
+.item.adopt-card.col-md-6.col-xl-3.res-margin.isotope-item {
+    padding: 10px;
+}
+
+.col-lg-9.border-irregular1.img-fluid {
+    padding: 40px;
+}
+
+
 /* Extra large devices (large desktops, 1920px or more) */
  @media (min-width: 1920px) {
     /*background decorations */
